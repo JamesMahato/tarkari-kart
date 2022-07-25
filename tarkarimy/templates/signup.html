@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup</title>
+    
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="background">
+            <div class="text">
+                <a href="login.html">
+                <h1>Signup</h1>
+                </a>
+
+                <div class="w-full text-center p-t-55">
+                    <span style="color:brown">
+                        Have account?
+                    </span>
+
+                    <a href="{% url 'login' %}" class="txt1 bo1">
+                        login
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <form class="form">
+                    <input type="text" class="form_item" placeholder="Full Name" required>
+                    <input type="email" class="form_item" placeholder="someone@abc.com" required>
+                    <input type="text" class="form_item" placeholder="Username" required>
+                    <input type="password" class="form_item" placeholder="Password" required>
+                    <input type="submit" class="button" value="Signup">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

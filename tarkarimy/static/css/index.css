@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.backgroundcolor{
+    background-color:#99CD4E;
+}
+nav{
+    margin-bottom: 0;
+}
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navigation1 li a{
+    margin-right: 60px;
+    font-size: 40px;  
+}
+.navbar-toggler-icon{
+    background-color:#FFFFFF;
+    width: 35px;
+    height: 35px;
+}
+.container-fluid{
+    padding: 7px; 
+}
+.carousel-item img{
+    width: 100%;
+    height: 100vh;
+}
+.navbar-brand{
+    margin-left: 50px;
+    font-size: 40px;
+}
+.carousel-caption{
+    padding-bottom: 1.25rem;
+}
+.backgroundcolor span{
+    color: red;
+}
+.backgroundcolor P{
+    color: #FFFFFF;
+}
+h3{
+    font-size: 40px;
+    color: #FFFFFF;
+}
+.myrestaurant img{
+    transition: 1s ease;
+}
+.myrestaurant img:hover{
+  opacity: 0.9;
+  transform: scale(1.05, 1.05);
+}
+.aboutus{
+    transition: 1s ease;
+
+}
+.aboutus:hover{
+    transform: scale(1.2, 1.2);
+    color: red;
+}
+
+.myrestaurant1 h1{
+    width: 12ch;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes type {
+    0%{
+        width: 0ch;
+    }
+    100%{
+        color: red;
+        width: 12ch;
+    }
+}
+.menuimg .img-fluid {
+    max-width: 100%;
+    height: 200px;
+    margin-bottom: 13px;
+    overflow: hidden;
+    animation: type1 2s linear;
+    transition:  5s ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes type1 {
+100%{
+    transform: scale(1.05, 1.05);
+}
+}
+.menuimg h5{
+    margin-top: 12px;
+    width: 12ch;
+    animation: type 6s steps(12);
+    overflow: hidden;
+    white-space: nowrap;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes type {
+    0%{
+        width: 1ch;
+    }
+    100%{
+        color: red;
+        width: 12ch;
+    }
+}
+.menuimg h4{
+    width: 12ch;
+    animation: type 6s steps(12);
+    overflow: hidden;
+    white-space: nowrap;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes type {
+    0%{
+        width: 0ch;
+    }
+    100%{   
+        width: 12ch;
+    }
+}
+footer{
+    background-color: #424242;
+    padding-bottom: 20px;
+}
+.bi-facebook{
+    color: rgb(21, 152, 240);
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+}
+.bi-whatsapp{
+    margin-left: 18px;
+    color: rgb(14, 214, 64);
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+}
+.bi-twitter{
+    margin-left: 18px;
+    color: rgb(11, 1, 158);
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+}
+.bi-youtube{
+    margin-left: 18px;
+    color: red;
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+}
+.support1 h2{
+    color: #FFFFFF;
+}
+.support1 h5{
+    color: #FFFFFF;
+}
+.support h2{
+    color: rgb(168, 164, 164);
+}
+.support h5{
+    color: white;
+}
+.inputedit{
+    text-align: center;
+    width: 100%;
+    height: 2.5em;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+::placeholder{
+    color: white;
+    
+}
+.support4 p{
+    width: 32ch;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 8px;
+    text-align: center;
+    animation: type3 steps(27);
+    overflow: hidden;
+    white-space: nowrap;
+    animation-duration: 6.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes type3 {
+    0%{
+        width: 1ch;
+    }
+    100%{   
+        width: 27ch;
+    }
+} 
+.signup{
+    width: 45%;
+    height: 15%;
+    display: block;
+    margin: auto;
+    outline: none;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 10px;
+}
+.signup:hover{
+    transform: scale(1.05, 1.05);
+    background-color: white;
+    color: red;
+}
+

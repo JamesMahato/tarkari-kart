@@ -1,0 +1,123 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="background">
+            <div class="text">
+                <a href="signup.html">
+                <h1>Login</h1>
+                </a>
+
+                <p>Have Account? <a href="/login.html">Login</a></p>
+            </div>
+            <div class="box">
+                <form class="form">
+                  
+                    <input type="text" class="form_item" placeholder="Username" required>
+                    <input type="password" class="form_item" placeholder="Password" required>
+                    <input type="submit" class="button" value="Login">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html> {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    
+<section class="vh-100">
+<form method='POST'action="">
+{% csrf_token %}
+    
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+                <img src="{% static "Images/login.png"%}"
+                    class="img-fluid" alt="Sample image"/>
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                    <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                        <p class="lead fw-normal mb-0 me-3">Sign in</p>
+                       
+                </div>
+                    <div>
+                        <input type="text" name="username" id="form3Example3" class="form-control form-control-lg"
+                        placeholder="Enter username" />
+                        <label class="form-label" for="form3Example3">Username</label>
+                        </div><br/>
+
+                        <div>
+                        <input type="password" name="password" id="form3Example3" class="form-control form-control-lg"
+                        placeholder="Enter password" />
+                        <label class="form-label" for="form3Example3">password</label>
+                        </div><br/>
+        
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- Checkbox -->
+                        <div class="form-check mb-0">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                            <label class="form-check-label" for="form2Example3">
+                                Remember me
+                            </label>
+                        </div>
+                        <a href="#!" class="text-body">Forgot password?</a>
+                    </div>
+
+                    <div class="text-center text-lg-start mt-4 pt-2">
+                        <button type="submit" value="login" class="btn btn-primary btn-lg"
+                        style="padding-left: 2.5rem; padding-right: 2.5rem;" >Login</button>
+                        <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="{% url 'signup' %}"
+                                class="link-danger">signup</a></p>
+                    </div><br/>
+                
+
+                
+            </div>
+        </div>
+    </div>
+</form>
+    
+ 
+        <div>
+            <a href="#!" class="text-white me-4">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#!" class="text-white me-4">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#!" class="text-white me-4">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="#!" class="text-white">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <!-- Right -->
+    </div>
+    </form>
+</section>
+</body>
+
+</html>
